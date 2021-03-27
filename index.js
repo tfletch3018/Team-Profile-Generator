@@ -68,7 +68,7 @@ function addMember() {
                     employees.push(newMember);
                     addHtml(newMemeber)
                         .then(function () {
-                            if (anotherMemeber === "yes" {
+                            if (anotherMemeber === "yes") {
                                 addMember();
                             } else {
                                 completeHtml();
@@ -78,3 +78,4 @@ function addMember() {
                 });
         });
 }
+console.log("hello world");
