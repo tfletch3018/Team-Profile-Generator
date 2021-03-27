@@ -66,9 +66,9 @@ function addMember() {
                         newMember = new Manager(name, id, email, positionInfo)
                     }
                     employees.push(newMember);
-                    addHtml(newMemeber)
+                    addHtml(newMember)
                         .then(function () {
-                            if (anotherMemeber === "yes") {
+                            if (anotherMember === "yes") {
                                 addMember();
                             } else {
                                 completeHtml();
