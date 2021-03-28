@@ -156,7 +156,7 @@ const html = `
 // </html>`;
 
 
-fs.writeFile("./test", html, function(err) {
+fs.writeFile(("./sample/team.html"), html, function(err) {
     if (err) {
         console.log(err);
     }
@@ -212,7 +212,7 @@ function addHtml(member) {
         </div>`
         }
         console.log("Member has been added successfully!");
-        require("./test", data, function (err){
+        require(("./sample/team.html"), data, function (err){
             if (err) {
                 return reject (err);
             };
@@ -230,7 +230,7 @@ function generateHtml() {
     </html>`;
 }
 
-fs.appendFile("./test", html, function (err) {
+fs.appendFile(("./sample/team.html"), html, function (err) {
     if (err) {
         console.log(err);
     };
