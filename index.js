@@ -101,59 +101,62 @@ const html = `
 </div>
 
 <div class="container">    
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading">Text</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Text</div>
-      </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-danger">
-        <div class="panel-heading">text</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Text</div>
-      </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-success">
-        <div class="panel-heading">text</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">text</div>
-      </div>
-    </div>
-  </div>
-</div><br>
+  <div class="row">`;
 
-<div class="container">    
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading">text</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">text</div>
-      </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-primary">
-        <div class="panel-heading">text</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">text</div>
-      </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-primary">
-        <div class="panel-heading">text</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">text</div>
-      </div>
-    </div>
-  </div>
-</div><br><br>
-</body>
-</html>`;
-fs.writeFile("./test/test.html", html, function(err) {
+//     <div class="col-sm-4">
+//       <div class="panel panel-primary">
+//         <div class="panel-heading">Text</div>
+//         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+//         <div class="panel-footer">Text</div>
+//       </div>
+//     </div>
+//     <div class="col-sm-4"> 
+//       <div class="panel panel-danger">
+//         <div class="panel-heading">text</div>
+//         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+//         <div class="panel-footer">Text</div>
+//       </div>
+//     </div>
+//     <div class="col-sm-4"> 
+//       <div class="panel panel-success">
+//         <div class="panel-heading">text</div>
+//         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+//         <div class="panel-footer">text</div>
+//       </div>
+//     </div>
+//   </div>
+// </div><br>
+
+// <div class="container">    
+//   <div class="row">
+//     <div class="col-sm-4">
+//       <div class="panel panel-primary">
+//         <div class="panel-heading">text</div>
+//         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+//         <div class="panel-footer">text</div>
+//       </div>
+//     </div>
+//     <div class="col-sm-4"> 
+//       <div class="panel panel-primary">
+//         <div class="panel-heading">text</div>
+//         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+//         <div class="panel-footer">text</div>
+//       </div>
+//     </div>
+//     <div class="col-sm-4"> 
+//       <div class="panel panel-primary">
+//         <div class="panel-heading">text</div>
+//         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+//         <div class="panel-footer">text</div>
+//       </div>
+//     </div>
+//   </div>
+// </div><br><br>
+// </body>
+// </html>`;
+
+
+fs.writeFile("./test", html, function(err) {
     if (err) {
         console.log(err);
     }
@@ -161,4 +164,77 @@ fs.writeFile("./test/test.html", html, function(err) {
 console.log("start");
 }
 
+function addHtml(member) {
+    return new Promise(function(resolve, reject) {
+        const name = member.getName();
+        const position = member.getPosition();
+        const id = member.getId();
+        const email = membeer.getEmail();
+        let data = "";
+        if (position === "Engineer") {
+            const gitHub = member.getGithub();
+            data = 
+            `<div class="col-6">
+            <div class="card mx-auto mb-3" style="width: 18rem">
+            <h5 class="card-header">${name}<br /><br />Engineer</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">ID: ${id}</li>
+                <li class="list-group-item">Email Address: ${email}</li>
+                <li class="list-group-item">GitHub: ${gitHub}</li>
+            </ul>
+            </div>
+        </div>`;
+        } else if (position === "Intern") {
+            const school = member.getSchool();
+            data = 
+            `<div class="col-6">
+            <div class="card mx-auto mb-3" style="width: 18rem">
+            <h5 class="card-header">${name}<br /><br />Intern</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">ID: ${id}</li>
+                <li class="list-group-item">Email Address: ${email}</li>
+                <li class="list-group-item">School: ${school}</li>
+            </ul>
+            </div>
+        </div>`; 
+        } else {
+            const officePhone = member.getOfficeNumber();
+            data = 
+            `<div class="col-6">
+            <div class="card mx-auto mb-3" style="width: 18rem">
+            <h5 class="card-header">${name}<br /><br />Manager</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">ID: ${id}</li>
+                <li class="list-group-item">Email Address: ${email}</li>
+                <li class="list-group-item">Office Phone: ${officePhone}</li>
+            </ul>
+            </div>
+        </div>`
+        }
+        console.log("Member has been added successfully!");
+        require("./test", data, function (err){
+            if (err) {
+                return reject (err);
+            };
+            return resolve();
+        });
+    });
 
+}
+
+function generateHtml() {
+    const html = `</div>
+    </div>
+
+    </body>
+    </html>`;
+}
+
+fs.appendFile("./test", html, function (err) {
+    if (err) {
+        console.log(err);
+    };
+});
+console.log("end program");
+
+initGenerator(); 
