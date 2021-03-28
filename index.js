@@ -224,7 +224,7 @@ function addHtml(member) {
 
 
 function generateHtml() {
-    const html = `</div>
+    let html = `</div>
     </div>
 
     </body>
