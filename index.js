@@ -7,7 +7,7 @@ const Intern = require("./lib/intern");
 const employees = [];
 
 function initGenerator() {
-    addHtml();
+    beginHtml();
     addMember();
 }
 
@@ -80,74 +80,85 @@ function addMember() {
 }
 console.log("hello world");
 
-// <!DOCTYPE html>
-// <html lang="en">
-// <head>
-//   <title>Bootstrap Example</title>
-//   <meta charset="utf-8">
-//   <meta name="viewport" content="width=device-width, initial-scale=1">
-//   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-//   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-//   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-// </head>
-// <body>
+function beginHtml() {
+const html = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
 
-// <div class="jumbotron">
-//   <div class="container text-center">
-//     <h1>My Team</h1>      
-//   </div>
-// </div>
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>My Team</h1>      
+  </div>
+</div>
 
-// <div class="container">    
-//   <div class="row">
-//     <div class="col-sm-4">
-//       <div class="panel panel-primary">
-//         <div class="panel-heading">Text</div>
-//         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-//         <div class="panel-footer">Text</div>
-//       </div>
-//     </div>
-//     <div class="col-sm-4"> 
-//       <div class="panel panel-danger">
-//         <div class="panel-heading">text</div>
-//         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-//         <div class="panel-footer">Text</div>
-//       </div>
-//     </div>
-//     <div class="col-sm-4"> 
-//       <div class="panel panel-success">
-//         <div class="panel-heading">text</div>
-//         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-//         <div class="panel-footer">text</div>
-//       </div>
-//     </div>
-//   </div>
-// </div><br>
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Text</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Text</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">text</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Text</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">text</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">text</div>
+      </div>
+    </div>
+  </div>
+</div><br>
 
-// <div class="container">    
-//   <div class="row">
-//     <div class="col-sm-4">
-//       <div class="panel panel-primary">
-//         <div class="panel-heading">text</div>
-//         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-//         <div class="panel-footer">text</div>
-//       </div>
-//     </div>
-//     <div class="col-sm-4"> 
-//       <div class="panel panel-primary">
-//         <div class="panel-heading">text</div>
-//         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-//         <div class="panel-footer">text</div>
-//       </div>
-//     </div>
-//     <div class="col-sm-4"> 
-//       <div class="panel panel-primary">
-//         <div class="panel-heading">text</div>
-//         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-//         <div class="panel-footer">text</div>
-//       </div>
-//     </div>
-//   </div>
-// </div><br><br>
-// </body>
-// </html>
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">text</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">text</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">text</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">text</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">text</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">text</div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+</body>
+</html>`;
+fs.writeFile("./test/test.html", html, function(err) {
+    if (err) {
+        console.log(err);
+    }
+});
+console.log("start");
+}
+
+
