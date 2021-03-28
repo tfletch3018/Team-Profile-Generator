@@ -44,7 +44,7 @@ function addMember() {
                 positionInfo = "office phone number";
             }
             inquirer.prompt([{
-                message: `Please enter member ${postionInfo}`,
+                message: `Please enter member ${positionInfo}`,
                 name: "positionInfo"
             },
             {
@@ -169,7 +169,7 @@ function addHtml(member) {
         const name = member.getName();
         const position = member.getPosition();
         const id = member.getId();
-        const email = membeer.getEmail();
+        const email = member.getEmail();
         let data = "";
         if (position === "Engineer") {
             const gitHub = member.getGithub();
@@ -224,12 +224,11 @@ function addHtml(member) {
 
 
 function generateHtml() {
-    let html = `</div>
+    const html = `</div>
     </div>
 
     </body>
     </html>`;
-}
 
 fs.appendFile("./sample/team.html", html, function (err) {
     if (err) {
@@ -237,5 +236,5 @@ fs.appendFile("./sample/team.html", html, function (err) {
     };
 });
 console.log("end program");
-
+}
 initGenerator();
