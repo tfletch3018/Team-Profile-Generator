@@ -124,7 +124,7 @@ function addHtml(member) {
                 `<div class="col-sm-4"> 
        <div class="panel panel-primary">
          <h5 class="panel-heading">${name}<br /><br />Engineer</h5>
-         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+         <div class="panel-body"><img src="../img/engineer.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <ul class="list-group list-group-flush">
              <li class="list-group-item">ID: ${id}</li>
              <li class="list-group-item">Email Address: ${email}</li>
