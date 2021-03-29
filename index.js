@@ -18,13 +18,13 @@ function addMember() {
     },
     {
         type: "list",
-        message: "Please enter the member position",
+        message: "Please enter the member role",
         choices: [
             "Manager",
             "Engineer",
             "Intern",
         ],
-        name: "position"
+        name: "role"
     },
     {
         message: "Please enter the member id",
@@ -34,18 +34,18 @@ function addMember() {
         message: "Please enter the member email",
         name: "email"
     }])
-        .then(function ({ name, position, id, email }) {
-            let positionInfo = "";
-            if (position === "Engineer") {
-                positionInfo = "Github username";
-            } else if (position === "Intern") {
-                positionInfo = "school name";
+        .then(function ({ name, role, id, email }) {
+            let roleInfo = "";
+            if (role === "Engineer") {
+                roleInfo = "Github username";
+            } else if (role === "Intern") {
+                roleInfo = "school name";
             } else {
-                positionInfo = "office phone number";
+                roleInfo = "office phone number";
             }
             inquirer.prompt([{
-                message: `Please enter member ${positionInfo}`,
-                name: "positionInfo"
+                message: `Please enter member ${roleInfo}`,
+                name: "roleInfo"
             },
             {
                 type: "list",
@@ -56,14 +56,14 @@ function addMember() {
                 ],
                 name: "anotherMember"
             }])
-                .then(function ({ positionInfo, anotherMember }) {
+                .then(function ({ roleInfo, anotherMember }) {
                     let newMember;
-                    if (position === "Engineer") {
-                        newMember = new Engineer(name, id, email, positionInfo);
-                    } else if (position === "Intern") {
-                        newMember = new Intern(name, id, email, positionInfo);
+                    if (role === "Engineer") {
+                        newMember = new Engineer(name, id, email, roleInfo);
+                    } else if (role === "Intern") {
+                        newMember = new Intern(name, id, email, roleInfo);
                     } else {
-                        newMember = new Manager(name, id, email, positionInfo)
+                        newMember = new Manager(name, id, email, roleInfo)
                     }
                     employees.push(newMember);
                     addHtml(newMember)
@@ -114,11 +114,11 @@ function beginHtml() {
 function addHtml(member) {
     return new Promise(function (resolve, reject) {
         const name = member.getName();
-        const position = member.getPosition();
+        const role = member.getRole();
         const id = member.getId();
         const email = member.getEmail();
         let data = "";
-        if (position === "Engineer") {
+        if (role === "Engineer") {
             const gitHub = member.getGithub();
             data =
                 `<div class="col-sm-4"> 
@@ -134,7 +134,7 @@ function addHtml(member) {
   
        </div>
      </div>`;
-        } else if (position === "Intern") {
+        } else if (role === "Intern") {
             const school = member.getSchool();
             data =
                 `<div class="col-sm-4"> 
