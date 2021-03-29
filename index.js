@@ -124,13 +124,13 @@ function addHtml(member) {
                 `<div class="col-sm-4"> 
        <div class="panel panel-primary">
          <h5 class="panel-heading">${name}<br /><br />Engineer</h5>
-         <div class="panel-body"><img src="../img/engineer.jpg" class="img-responsive" style="width: 300px height 100px" alt="Image"></div>
+         <div class="panel-body"><img src="../img/engineer.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <ul class="list-group list-group-flush">
              <li class="list-group-item">ID: ${id}</li>
              <li class="list-group-item">Email Address: ${email}</li>
          </ul>
          <div class="panel-footer">Github: ${gitHub}</div>
-         <figcaption class="text-center">Photo by <a href="https://unsplash.com/@davirezende?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Davi Rezende</a> on <a href="https://unsplash.com/t/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+         <figcaption class="text-center">Photo by <a href="https://unsplash.com/@heidifin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Heidi Fin</a> on <a href="https://unsplash.com/t/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
        </div>
      </div>`;
@@ -146,8 +146,7 @@ function addHtml(member) {
              <li class="list-group-item">Email Address: ${email}</li>
          </ul>
          <div class="panel-footer">School: ${school}</div>
-         <figcaption class="text-center">Photo by <a href="https://unsplash.com/@ismail_fwcr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ismail Merad</a> on <a href="https://unsplash.com/t/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+         <figcaption class="text-center">Photo by <a href="https://unsplash.com/@matt__feeney?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">matthew Feeney</a> on <a href="https://unsplash.com/t/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
        </div>
      </div>`;
 
@@ -163,8 +162,7 @@ function addHtml(member) {
              <li class="list-group-item">Email Address: ${email}</li>
          </ul>
          <div class="panel-footer">Office Phone: ${officePhone}</div>
-         <figcaption class="text-center">Photo by <a href="https://unsplash.com/@claudiopoggio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Claudio Poggio</a> on <a href="https://unsplash.com/t/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+         <figcaption class="text-center">Photo by <a href="https://unsplash.com/@ajaegers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Arnaud Jaegers</a> on <a href="https://unsplash.com/t/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
        </div>
      </div>`;
         }
