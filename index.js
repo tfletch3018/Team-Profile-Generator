@@ -124,12 +124,14 @@ function addHtml(member) {
                 `<div class="col-sm-4"> 
        <div class="panel panel-primary">
          <h5 class="panel-heading">${name}<br /><br />Engineer</h5>
-         <div class="panel-body"><img src="../img/engineer.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+         <div class="panel-body"><img src="../img/engineer.jpg" class="img-responsive" style="width: 300px height 100px" alt="Image"></div>
         <ul class="list-group list-group-flush">
              <li class="list-group-item">ID: ${id}</li>
              <li class="list-group-item">Email Address: ${email}</li>
          </ul>
          <div class="panel-footer">Github: ${gitHub}</div>
+         <figcaption class="text-center">Photo by <a href="https://unsplash.com/@davirezende?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Davi Rezende</a> on <a href="https://unsplash.com/t/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
        </div>
      </div>`;
         } else if (position === "Intern") {
