@@ -140,12 +140,14 @@ function addHtml(member) {
                 `<div class="col-sm-4"> 
        <div class="panel panel-primary">
          <h5 class="panel-heading">${name}<br /><br />Intern</h5>
-         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+         <div class="panel-body"><img src="../img/intern.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <ul class="list-group list-group-flush">
              <li class="list-group-item">ID: ${id}</li>
              <li class="list-group-item">Email Address: ${email}</li>
          </ul>
          <div class="panel-footer">School: ${school}</div>
+         <figcaption class="text-center">Photo by <a href="https://unsplash.com/@ismail_fwcr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ismail Merad</a> on <a href="https://unsplash.com/t/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
        </div>
      </div>`;
 
@@ -155,12 +157,14 @@ function addHtml(member) {
                 `<div class="col-sm-4"> 
        <div class="panel panel-primary">
          <h5 class="panel-heading">${name}<br /><br />Manager</h5>
-         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+         <div class="panel-body"><img src="../img/manager.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <ul class="list-group list-group-flush">
              <li class="list-group-item">ID: ${id}</li>
              <li class="list-group-item">Email Address: ${email}</li>
          </ul>
          <div class="panel-footer">Office Phone: ${officePhone}</div>
+         <figcaption class="text-center">Photo by <a href="https://unsplash.com/@claudiopoggio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Claudio Poggio</a> on <a href="https://unsplash.com/t/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
        </div>
      </div>`;
         }
