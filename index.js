@@ -108,7 +108,7 @@ function beginHtml() {
             console.log(err);
         }
     });
-    console.log("start");
+    console.log("Begin Team Profile Generator");
 }
 
 function addHtml(member) {
@@ -186,6 +186,6 @@ function generateHtml() {
             console.log(err);
         };
     });
-    console.log("end program");
+    console.log("End Team Profile Generator");
 }
 initGenerator();
