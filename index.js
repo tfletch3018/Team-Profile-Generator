@@ -131,7 +131,6 @@ function addHtml(member) {
          </ul>
          <div class="panel-footer">Github: ${gitHub}</div>
          <figcaption class="text-center">Photo by <a href="https://unsplash.com/@heidifin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Heidi Fin</a> on <a href="https://unsplash.com/t/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
        </div>
      </div>`;
         } else if (role === "Intern") {
