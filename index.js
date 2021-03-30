@@ -78,7 +78,7 @@ function addMember() {
                 });
         });
 }
-console.log("hello world");
+console.log("Welcome to Team Profile Generator!");
 
 function beginHtml() {
     const html = `
