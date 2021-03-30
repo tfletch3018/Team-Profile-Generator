@@ -67,10 +67,9 @@ You are required to submit the following for review:
 * A sample HTML file generated using your application.
 
 * The URL of the GitHub repository, with a unique name and a readme describing the project.
+https://github.com/tfletch3018/Team-Profile-Generator
 
 
-
-
-
+<img src="../img/screenshot.png">
 
 
