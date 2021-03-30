@@ -70,4 +70,4 @@ You are required to submit the following for review:
 
 
 
-<img src="../img/Screenshot.png" />
+<img src="../img/Screenshot.png">
