@@ -131,8 +131,8 @@ function addHtml(member) {
              <li class="list-group-item">Email Address: ${email}</li>
          </ul>
          <div class="panel-footer">Github: ${gitHub}</div>
-         <figcaption class="text-center">Photo by <a href="https://unsplash.com/@heidifin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Heidi Fin</a> on <a href="https://unsplash.com/t/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-       </div>
+         <figcaption class="text-center">Photo by <a href="https://unsplash.com/@ripato?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ricardo Gomez Angel</a> on <a href="https://unsplash.com/t/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+         </div>
      </div>`;
         } else if (role === "Intern") {
             const school = member.getSchool();
@@ -162,8 +162,8 @@ function addHtml(member) {
              <li class="list-group-item">Email Address: ${email}</li>
          </ul>
          <div class="panel-footer">Office Phone: ${officePhone}</div>
-         <figcaption class="text-center">Photo by <a href="https://unsplash.com/@ajaegers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Arnaud Jaegers</a> on <a href="https://unsplash.com/t/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-       </div>
+         <figcaption class="text-center">Photo by <a href="https://unsplash.com/@sonance?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Viktor Forgacs</a> on <a href="https://unsplash.com/t/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+         </div>
      </div>`;
         }
 
