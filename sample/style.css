@@ -3,6 +3,7 @@
     --smoke:#737373;
     --mood:#4d0099;
     --light:#ffffff;
+    --mist:#e6e6e6;
 }
 
 .jumbotron {
@@ -19,6 +20,46 @@
     border-color: var(--mood);
     color: var(--light);
     text-shadow: 3px 3px var(--smoke);
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: var(--orchid);
+    border: 1px solid #ddd;
+    color: var(--light);
+    text-shadow: 3px 3px var(--smoke);
+}
+
+.panel-footer {
+    padding: 10px 15px;
+    background-color: var(--orchid);
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color: var(--light);
+    text-shadow: 3px 3px var(--smoke);
+}
+figcaption {
+    background-color: var(--pale);
+    color: var(--mist);
+}
+
+a:focus, a:hover {
+    color: var(--orchid);
+    text-decoration: underline;
+}
+a:active, a:hover {
+    outline: 0;
+}
+a {
+    color: var(--mist);
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
 }
 
 body {
