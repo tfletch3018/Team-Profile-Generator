@@ -70,6 +70,5 @@ You are required to submit the following for review:
 https://github.com/tfletch3018/Team-Profile-Generator
 
 
-<img src="../img/screenshot.png">
 
 
