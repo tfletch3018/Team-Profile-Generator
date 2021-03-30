@@ -1,0 +1,26 @@
+:root {
+    --orchid:#cc99ff;
+    --smoke:#737373;
+    --mood:#4d0099;
+    --light:#ffffff;
+}
+
+.jumbotron {
+    color: var(--smoke);
+    background-color: var(--orchid);
+    border-color: var(--mood);
+    color: var(--light);
+    text-shadow: 3px 3px var(--smoke);
+}
+
+.panel-primary>.panel-heading {
+    color: var(--smoke);
+    background-color: var(--orchid);
+    border-color: var(--mood);
+    color: var(--light);
+    text-shadow: 3px 3px var(--smoke);
+}
+
+body {
+    background-color: var(--smoke);
+}
