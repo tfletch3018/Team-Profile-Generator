@@ -64,6 +64,10 @@ In addition to `Employee`'s properties and methods, `Intern` will also have the 
 You are required to submit the following for review:
 * A walkthrough video that demonstrates the functionality of the application and passing tests.
 
+https://drive.google.com/file/d/18jlPFFznMFrE5WrzB6WIoQfUpPqrYf-w/view?usp=sharing
+
+<iframe src="https://drive.google.com/file/d/18jlPFFznMFrE5WrzB6WIoQfUpPqrYf-w/preview" width="640" height="480"></iframe>
+
 * A sample HTML file generated using your application.
 
 * The URL of the GitHub repository, with a unique name and a readme describing the project.
