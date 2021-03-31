@@ -70,6 +70,8 @@ https://drive.google.com/file/d/18jlPFFznMFrE5WrzB6WIoQfUpPqrYf-w/view?usp=shari
 
 * A sample HTML file generated using your application.
 
+Please see sample folder for generated file "team.html"
+
 * The URL of the GitHub repository, with a unique name and a readme describing the project.
 https://github.com/tfletch3018/Team-Profile-Generator
 
