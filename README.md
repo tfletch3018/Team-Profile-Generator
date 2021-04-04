@@ -75,6 +75,7 @@ Please see sample folder for generated file "team.html"
 * The URL of the GitHub repository, with a unique name and a readme describing the project.
 https://github.com/tfletch3018/Team-Profile-Generator
 
-<img src="img\screenshot.png">
+<img src="/screenshot.png">
+
 
 
