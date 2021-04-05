@@ -36,44 +36,20 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
 
-The application must include `Employee`, `Manager`, `Engineer`, and `Intern` classes. The tests for these classes (in the `_tests_` directory) must ALL pass.
-The first class is an `Employee` parent class with the following properties and methods:
-* `name`
-* `id`
-* `email`
-* `getName()`
-* `getId()`
-* `getEmail()`
-* `getRole()`&mdash;returns `'Employee'`
-The other three classes will extend `Employee`.
-In addition to `Employee`'s properties and methods, `Manager` will also have the following:
-* `officeNumber`
-* `getRole()`&mdash;overridden to return `'Manager'`
-In addition to `Employee`'s properties and methods, `Engineer` will also have the following:
-* `github`&mdash;GitHub username
-* `getGithub()`
-* `getRole()`&mdash;overridden to return `'Engineer'`
-In addition to `Employee`'s properties and methods, `Intern` will also have the following:
-* `school`
-* `getSchool()`
-* `getRole()`&mdash;overridden to return `'Intern'`
-
 
 ## Review
-
+```
 You are required to submit the following for review:
 * A walkthrough video that demonstrates the functionality of the application and passing tests.
-
+```
 
 
 <iframe src="https://drive.google.com/file/d/18jlPFFznMFrE5WrzB6WIoQfUpPqrYf-w/preview" width="640" height="480"></iframe>
 
-
-
+``
 * A sample HTML file generated using your application.
-
 Please see sample folder for generated file "team.html"
-
+``
 * The URL of the GitHub repository, with a unique name and a readme describing the project.
 https://github.com/tfletch3018/Team-Profile-Generator
 
