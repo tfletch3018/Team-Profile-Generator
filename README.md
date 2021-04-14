@@ -42,7 +42,7 @@ THEN I exit the application, and the HTML is generated
 You are required to submit the following for review:
 * A walkthrough video that demonstrates the functionality of the application and passing tests.
 ```
-<iframe src="https://drive.google.com/file/d/18jlPFFznMFrE5WrzB6WIoQfUpPqrYf-w/preview" width="640" height="480"></iframe>
+<img src="img\demo.gif" />
 
 ``
 * A sample HTML file generated using your application.
@@ -52,6 +52,8 @@ Please see sample folder for generated file "team.html"
 https://github.com/tfletch3018/Team-Profile-Generator
 
 <img src="screenshot.png">
+
+<iframe src="https://drive.google.com/file/d/18jlPFFznMFrE5WrzB6WIoQfUpPqrYf-w/preview" width="640" height="480"></iframe>
 
 
 
