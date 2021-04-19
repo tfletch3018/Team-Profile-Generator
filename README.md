@@ -53,6 +53,5 @@ Please see sample folder for generated file "team.html"
 
 <img src="screenshot.png">
 
-<!-- <iframe src="https://drive.google.com/file/d/18jlPFFznMFrE5WrzB6WIoQfUpPqrYf-w/preview" width="640" height="480"></iframe> -->
+<iframe src="https://drive.google.com/file/d/18jlPFFznMFrE5WrzB6WIoQfUpPqrYf-w/preview" width="640" height="480"></iframe>
 
-<iframe src=![Watch the demo](https://drive.google.com/file/d/18jlPFFznMFrE5WrzB6WIoQfUpPqrYf-w/preview) width="640" height="480"></iframe>
